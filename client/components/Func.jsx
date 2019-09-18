@@ -24,10 +24,10 @@ function Func(props) {
       }}>
       </input>
       
-      <button className='addTest bg-light-green ma2 grow bw2 shadow-5' onClick={addTest}>
+      <button className='addTest bg-#fff ma2 grow bw2 shadow-5' onClick={addTest}>
         add test
       </button>
-      <button className='deleteTest bg-red ma2 grow bw2 shadow-5' onClick={handleDelete}>
+      <button className='deleteTest bg-#fff ma2 grow bw2 shadow-5' onClick={handleDelete}>
         delete test
       </button>
       <h3>
