@@ -14,9 +14,6 @@ export default function Nav() {
     <nav className = 'main-nav'>
       <ul>
         {navItems}
-       
-  
-   
       </ul>
     </nav>
   )

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 function Func(props) {
-  const { funcArray, setFunc, setTest, inputTest } = props
+  const { funcArray, setFunc} = props
 
   const [inputValue, setInputValue] = useState('')
 
