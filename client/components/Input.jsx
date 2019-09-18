@@ -14,12 +14,13 @@ export default function Input(props) {
   return(
     <div className = 'input-area'>
       <div id = 'add-func'>
-        <input type = 'text' onChange = {(e)=>setInput(e.target.value)}>
+        <input value = {inputField} placeholder={'Your function name..'} type = 'text' id = 'input-func-area' onChange = {(e)=>setInput(e.target.value)}>
         </input>
-        <button onClick = {()=>{
+        <button id = 'add-function-btn' onClick = {()=>{
           const copyOfFuncArray = [...funcArray];
           copyOfFuncArray.push({functionName: inputField, tests:[]})
           setFunc(copyOfFuncArray);
+          setInput('')
         }}>
           add func
         </button>

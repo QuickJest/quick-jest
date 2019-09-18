@@ -33,7 +33,7 @@ function Func(props) {
    <div className ='Func dib br3 pa3 ma2 bw2 shadow-5'>
      <div className = 'input-and-add'>
       <input id="name" className="input-reset ba b--black-20 pa2 mb2 db" 
-      type="text" aria-describedby="name-desc" onChange={(e)=>{  
+      type="text" aria-describedby="name-desc" value = {inputTest} onChange={(e)=>{  
        props.setTest(e.target.value);
       }}>
       </input>
