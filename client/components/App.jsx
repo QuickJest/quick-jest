@@ -8,10 +8,10 @@ import Main from './Main.jsx';
 
 import 'tachyons'
 function App() {
-  const [functions, setFunc] = useState([{functionName:'test', tests: ['should render an object']}])
+  const [funcArray, setFunc] = useState([{functionName:'test', tests: ['should render an object']}])
   const [inputField, setInput] = useState('')
   const [inputTest, setTest] = useState('')
-  
+
   const inputChange = (e)=>{
     setInput(e.target.value)
   }
@@ -21,7 +21,7 @@ function App() {
 
     <div className = 'wrapper'>
       <Nav/>
-      <Main funcArray = {functions} setFunc = {setFunc} setTest = {setTest} inputTest = {inputTest} setInput = {setInput} inputField = {inputField}/>
+      <Main funcArray = {funcArray} setFunc = {setFunc} setTest = {setTest} inputTest = {inputTest} setInput = {setInput} inputField = {inputField}/>
     </div>
       )
 }

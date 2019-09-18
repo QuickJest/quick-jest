@@ -9,7 +9,7 @@ export default function Main(props) {
   return(
     <div className = 'main-area'>
      <Input funcArray = {funcArray} setFunc = {setFunc} setTest = {setTest} inputTest = {inputTest} setInput = {setInput} inputField = {inputField}/>
-     <Mirror/>
+     <Mirror funcArray= {funcArray}/>
     </div>
   )
 }
