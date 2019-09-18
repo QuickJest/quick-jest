@@ -1,26 +1,55 @@
-
+h3{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color:#333;
+  font-weight:400;
+  line-height:1.25;
+  color:white;
+  font-size: 1.7em;
+}
 .addTest{
   height: 25px;
-  width: 100px;
-  float:right;
+  width: 25px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 20px;
+  background-color:#83d0f2;
+  border: none;
+  color:white;
+  font-weight: 800;
+  /* float:right; */
   /* bg-light-green ma2 grow bw2 shadow-5 */
+}
+.tests{
+  position: relative;
+  bottom:0;
+  /* min-height:25px;
+  min-width: 250px; */
+  display:flex;
+  align-items: center;
+}
+.testBox {
+  display:grid;
+  grid-template-areas:
+  'tests deleteTest';
 }
 .deleteTest{
   height: 25px;
-  width: 100px;
+  width: 25px;
   float:right;
+  overflow-x:scroll;
+
   /* bg-light-green ma2 grow bw2 shadow-5 */
 }
 .Func{
   position: relative;
-  justify-content: center;
-  float:left;
   background:white;
   max-width: 300px;
   max-height: 300px;
   overflow-y: scroll;
   border: 1px solid black;
-  
+  min-width: 280px;
+
 }
 
 
@@ -37,6 +66,7 @@
 
 
 .wrapper{
+  font-family: Georgia, serif;
 }
 
 .code{
@@ -109,4 +139,19 @@
 #func-wrapper{
   display:grid;
   grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+  grid-gap: 6px;
+}
+
+.func-name{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color:#333;
+  font-weight:400;
+  line-height:1.25;
+  color:white;
+  font-size: 1.7em;
+}
+
+.input-and-add{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
 }
