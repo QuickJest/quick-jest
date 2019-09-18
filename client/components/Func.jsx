@@ -2,14 +2,14 @@ import React, {useState} from 'react';
 
 function Func(props) {
   const { funcArray, setFunc, setTest, inputTest } = props
-  const handleDelete = ()=>{
 
-  }
+  const [inputValue, setInputValue] = useState('')
+
   const addTest = ()=>{
     let newFuncArr=[...props.functions]
-    newFuncArr[props.index]["tests"].push(props.inputTest)
+    newFuncArr[props.index]["tests"].push(inputValue)
     props.setFunc(newFuncArr);
-    props.setTest('')
+    setInputValue('')
   }
   let testArr = []
   props.tests.forEach((test, i)=>{
@@ -22,7 +22,7 @@ function Func(props) {
       let newFuncArr=[...props.functions]
       delete newFuncArr[props.index]["tests"][i]
       props.setFunc(newFuncArr);
-      props.setTest('')
+      // props.setTest('')
       }}>
         d
       </button>
@@ -33,8 +33,9 @@ function Func(props) {
    <div className ='Func dib br3 pa3 ma2 bw2 shadow-5'>
      <div className = 'input-and-add'>
       <input id="name" className="input-reset ba b--black-20 pa2 mb2 db" 
-      type="text" aria-describedby="name-desc" value = {inputTest} onChange={(e)=>{  
-       props.setTest(e.target.value);
+      type="text" aria-describedby="name-desc" value = {inputValue} onChange={(e)=>{  
+       setInputValue(e.target.value)
+      //  props.setTest(e.target.value);
       }}>
       </input>
       
@@ -45,7 +46,7 @@ function Func(props) {
       <p className = 'func-name'>
         {props.name}
       </p>
-      {testArr} 
+      {testArr}
     </div>
   )
 }
