@@ -4,10 +4,25 @@
   float:right;
   /* bg-light-green ma2 grow bw2 shadow-5 */
 }
+.tests{
+  position: relative;
+  bottom:0;
+  min-height:25px;
+  min-width: 250px;
+  display:flex;
+  align-items: center;
+}
+.testBox {
+  display:grid;
+  grid-template-areas:
+  'tests deleteTest';
+}
 .deleteTest{
   height: 25px;
-  width: 100px;
+  width: 25px;
   float:right;
+  overflow-x:scroll;
+
   /* bg-light-green ma2 grow bw2 shadow-5 */
 }
 .Func{
@@ -33,6 +48,7 @@
 
 
 .wrapper{
+  font-family: Georgia, serif;
 }
 
 .code{
@@ -85,7 +101,6 @@
   grid-template-areas:
   'input-area input-area code'
   ;
-
 }
 
 

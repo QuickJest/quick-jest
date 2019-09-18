@@ -1,7 +1,5 @@
 
 import React, {useState} from 'react';
-import Right from './Right.jsx'
-import Func from './Func.jsx'
 import Nav from './Nav.jsx';
 import Main from './Main.jsx';
 // import './codemirror.css'
